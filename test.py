@@ -43,4 +43,4 @@ def cin(cin):
 	print "Avg. Capital : ",ac[0]
 
 	fo.close()
-	return "Success!!"
+	return "{\"cin_status\":{\"Company Name\":\""+cmp_name[0]+"\"}}"
