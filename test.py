@@ -43,4 +43,5 @@ def cin(cin):
 	print "Avg. Capital : ",ac[0]
 
 	fo.close()
-	return "{\"cin_status\":{\"cmp_name\":\""+cmp_name[0]+"\",\"reg_no\":\""+reg_no[0]+"\",\"avg_capital\":\""+ac[0]+"\" }}"
+	#return "{\"cin_status\":{\"cmp_name\":\""+cmp_name[0]+"\",\"reg_no\":\""+reg_no[0]+"\",\"avg_capital\":\""+ac[0]+"\" }}"
+	return str(cmp_name[0])+","+str(reg_no[0])+","+str(ac[0])
