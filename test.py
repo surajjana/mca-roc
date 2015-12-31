@@ -42,6 +42,12 @@ def cin(cin):
 	print "Reg No. : ",reg_no[0]
 	print "Avg. Capital : ",ac[0]
 
+	ac_final = ""
+
+	new_ac = ac[0].split(",")
+	for ac in new_ac:
+		ac_final += str(ac)
+
 	fo.close()
 	#return "{\"cin_status\":{\"cmp_name\":\""+cmp_name[0]+"\",\"reg_no\":\""+reg_no[0]+"\",\"avg_capital\":\""+ac[0]+"\" }}"
-	return str(cmp_name[0])+","+str(reg_no[0])+","+str(ac[0])
+	return str(cmp_name[0])+","+str(reg_no[0])+","+ac_final
